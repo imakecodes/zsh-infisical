@@ -30,7 +30,7 @@ function cd {
         if [ -n "$ZSH_INFISICAL_VERBOSE" ]; then
             VERBOSE=$ZSH_INFISICAL_VERBOSE
         fi
-
+        echo "Using $DEFAULT_URL with $DEFAULT_ENV..."
         # Activate the environment using the eval command with the CLI output
         infisical --domain=$DEFAULT_URL export -f dotenv-export -e $DEFAULT_ENV | eval
     fi
