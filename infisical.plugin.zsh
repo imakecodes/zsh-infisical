@@ -39,6 +39,6 @@ function cd {
         fi
 
         # Activate the environment using the eval command with the CLI output
-        infisical --domain=$DEFAULT_URL export -f dotenv-export -e $DEFAULT_ENV | eval
+	eval `infisical --domain=$DEFAULT_URL export -f dotenv-export -e $DEFAULT_ENV`
     fi
 }
